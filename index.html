@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./src/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+</head>
+<body>
+    <div class="loading-block">
+        <div id="loading-frame"></div>
+        <div id="loading">Loading...</div>
+    </div>
+    
+    <div class="roof">
+        <div id="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <div id="nav" >
+            <ul>
+                <li>БАНК</li>
+                <li>БИЗНЕС</li>
+                <li>ИНВЕСТИЦИИ</li>
+                <li>СТРАХОВАНИЕ</li>
+                <li>МОБАЙЛ</li>
+                <li>ПУТЕШЕСТВИЯ</li>
+                <li>РАЗВЛЕЧЕНИЯ</li>
+            </ul>
+        </div>
+        <div id="enter-button">
+            <button>ВОЙТИ</button>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="inner-wrapper">
+            <div id="have" class="card">
+                <div class="small-header">У меня есть </div>
+                <div class="currency-selection">
+                    
+                    <button class="currency-button-from clicked">RUB</button>
+                    <button class="currency-button-from">USD</button>
+                    <button class="currency-button-from">EUR</button>
+                    <button class="currency-button-from">GBP</button>
+                    <select class="selection currency-button-from"></select>
+                </div>
+                <div class="input-field">
+                    <input id="from" class="large-numbers" type="text" placeholder="1" value="1">
+                    <p id="rate-from" class="current-rate"></p>
+                </div>
+            </div>
+            <div id="convert-arrows">
+                <img src="images/convert-arrows.svg" alt="">
+            </div>
+            <div id="want" class="card">
+                <div class="small-header">Хочу приобрести</div>
+                <div class="currency-selection">
+                    <button class="currency-button-to">RUB</button>
+                    <button class="currency-button-to clicked">USD</button>
+                    <button class="currency-button-to">EUR</button>
+                    <button class="currency-button-to">GBP</button>
+                    <select class="selection currency-button-to"></select>
+                </div>
+                <div class="input-field">
+                    <input id="to" class="large-numbers" type="text" placeholder="1" disabled></input>
+                    <p id="rate-to" class="current-rate"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
